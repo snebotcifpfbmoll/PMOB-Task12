@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/toastButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/default_margin_side"
+        android:layout_marginTop="@dimen/default_margin_top"
+        android:layout_marginRight="@dimen/default_margin_side"
+        android:background="@color/buttonBackground"
+        android:text="@string/toast"
+        android:textColor="@color/buttonText" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/counter_height"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginLeft="@dimen/default_margin_side"
+        android:layout_marginRight="@dimen/default_margin_side"
+        android:autoSizeMaxTextSize="350sp"
+        android:autoSizeMinTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/counterBackground"
+        android:text="@string/initial_counter"
+        android:textAlignment="center"
+        android:textColor="@color/buttonBackground"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/counterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/default_margin_side"
+        android:layout_marginRight="@dimen/default_margin_side"
+        android:background="@color/buttonBackground"
+        android:onClick="counterButtonPressed"
+        android:text="@string/counter"
+        android:textColor="@color/buttonText" />
+</LinearLayout>
